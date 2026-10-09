@@ -1,7 +1,7 @@
-@use '../mixins' as *;
+@use "../mixins" as *;
 
 .header {
-  background-image: url("../assets/images/mountains.jpg");
+  background-image: url("../../../public/assets/images/mountains.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -52,7 +52,7 @@
   }
 
   &__title {
-    font-family: 'Next Art', sans-serif;
+    font-family: "Next Art", sans-serif;
     font-size: 50px;
     font-weight: 700;
     color: var(--color-white-darker);
@@ -74,8 +74,8 @@
     flex-direction: column;
 
     &:nth-child(2) .tour-list__svg {
-        width: 18px;
-        height: 18px;
+      width: 18px;
+      height: 18px;
     }
   }
 
