@@ -1,0 +1,171 @@
+@use "../mixins" as *;
+
+.header {
+  background-image: url("../../../public/assets/images/mountains.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 463px;
+  padding-top: 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    & {
+      flex-direction: column;
+      padding-bottom: 234px;
+    }
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__item {
+    @include white-text;
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 24px;
+
+    @media screen and (max-width: 1200px) {
+      & {
+        font-size: 16px;
+        padding-right: 20px;
+      }
+    }
+
+    &:nth-last-child(2) {
+      margin-right: 49px;
+
+      @media screen and (max-width: 1200px) {
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.title {
+  font-family: "Next Art", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-white-darker);
+  line-height: 150%;
+  letter-spacing: 2px;
+  padding-bottom: 41px;
+
+  @media screen and (max-width: 1200px) {
+    & {
+      font-size: 45px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 50px;
+
+  &__container {
+    background-color: var(--color-white-transparent);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    display: flex;
+    max-width: 1180px;
+    height: 161px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    //align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &:nth-child(2) .tour-list__svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    border: solid 1px var(--color-white-darker);
+    background: transparent;
+    color: var(--color-white-darker);
+    border-radius: 9px;
+    font-family: "Nunito sans", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    padding: 14px 16px;
+    align-items: center;
+    height: 52px;
+
+    //@media screen and (max-width: 1200px) {
+    //  padding: 5px 5px;
+    //}
+  }
+
+  &__text {
+    //padding: 14px 8px 14px 16px;
+    width: 210px;
+    padding-right: 8px;
+    display: flex;
+
+    //@media screen and (max-width: 1200px) {
+    //  & {
+    //    max-width: 210px;
+    //    width: 100%;
+    //  }
+    //}
+  }
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__description {
+    @include white-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 8px 8px 0 8px;
+  }
+
+  &__button-find {
+    font-weight: 700;
+    padding: 15px 35px;
+    margin-bottom: 29px;
+    height: 52px;
+    border-radius: 9px;
+    color: var(--color-dark-green);
+    background-color: var(--color-white-darker);
+    border-color: var(--color-white-darker);
+
+    //@media screen and (max-width: 1200px) {
+    //  & {
+    //    padding: 5px 5px;
+    //  }
+    //}
+  }
+}
