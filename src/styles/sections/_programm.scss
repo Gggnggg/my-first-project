@@ -1,0 +1,43 @@
+.programm {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+    padding: 100px 0 100px 0;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 480px;
+    height: 526px;
+  }
+
+  &__description {
+    max-width: 580px;
+    width: 100%;
+  }
+
+  &__about {
+    font:
+      normal 400 24px/20px Nunito,
+      sans-serif;
+    color: var(--color-yellow);
+    padding-bottom: 8px;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    font:
+      normal 400 18px/150% Nunito Sans,
+      sans-serif;
+    color: var(--color-black-purple);
+    padding-bottom: 40px;
+  }
+}
