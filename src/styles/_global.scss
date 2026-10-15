@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,24 +12,24 @@
 }
 
 :root {
-  --color-white: #FFFFFF;
-  --color-white-transparent: #FFFFFF33;
-  --color-primary: #E1E3E4;
-  --color-white-darker: #FDFDFD;
+  --color-white: #ffffff;
+  --color-white-transparent: #ffffff33;
+  --color-primary: #e1e3e4;
+  --color-white-darker: #fdfdfd;
   --color-black: #000000;
-  --color-black-purple: #18121E;
-  --color-dark-green: #1A3E3E;
-  --color-yellow: #F2BE22;
-  --color-gray: #D9D9D9;
-  --color-green: #45766A;
-  --color-light-gray: #F3F5F4;
-  --color-purple: #9747FF;
-  --color-green-forest: #1A3E3E4D;
-  --color-blue-purple: #6276AA;
-  --color-light-blue-purple: #E3E6EE;
-  --color-light-green: #E5EEEB;
-  --color-light-yellow: #F3F1E1;
-  --color-red: #FF0000;
+  --color-black-purple: #18121e;
+  --color-dark-green: #1a3e3e;
+  --color-yellow: #f2be22;
+  --color-gray: #d9d9d9;
+  --color-green: #45766a;
+  --color-light-gray: #f3f5f4;
+  --color-purple: #9747ff;
+  --color-green-forest: #1a3e3e4d;
+  --color-blue-purple: #6276aa;
+  --color-light-blue-purple: #e3e6ee;
+  --color-light-green: #e5eeeb;
+  --color-light-yellow: #f3f1e1;
+  --color-red: #ff0000;
 }
 
 .button {
@@ -46,6 +46,7 @@
   border: 1px solid var(--color-dark-green);
   padding: 11px 23px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .descriprion {
@@ -63,4 +64,3 @@
   font-weight: 800;
   color: var(--color-black-purple);
 }
-

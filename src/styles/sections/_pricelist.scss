@@ -1,0 +1,92 @@
+@use "../mixins" as *;
+
+.pricelist {
+  background-color: var(--color-light-gray);
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  &__content-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__about {
+    @include yellow-text;
+  }
+
+  &__info {
+    @include description;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-height: 64px;
+  }
+
+  &__svg {
+    height: 50px;
+    width: 50px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__header {
+    font:
+      700 18px/20px "Nunito sans",
+      sans-serif;
+    letter-spacing: 1.2%;
+  }
+
+  &__description {
+    font:
+      400 14px/20px "Nunito sans",
+      sans-serif;
+  }
+
+  &__button {
+    max-width: 236px;
+    height: 52px;
+
+    &:hover {
+      @include hover-button;
+    }
+
+    &:active {
+      @include active-button;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__src {
+    max-width: 510px;
+    height: 510px;
+  }
+}

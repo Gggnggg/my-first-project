@@ -1,3 +1,5 @@
+@use "../mixins" as *;
+
 .programm {
   .container {
     display: flex;
@@ -7,7 +9,7 @@
     padding: 100px 0 100px 0;
   }
 
-  &__content {
+  &__inner {
     width: 100%;
   }
 
@@ -22,10 +24,7 @@
   }
 
   &__about {
-    font:
-      normal 400 24px/20px Nunito,
-      sans-serif;
-    color: var(--color-yellow);
+    @include yellow-text;
     padding-bottom: 8px;
   }
 
@@ -34,10 +33,19 @@
   }
 
   &__text {
-    font:
-      normal 400 18px/150% Nunito Sans,
-      sans-serif;
-    color: var(--color-black-purple);
+    @include description;
     padding-bottom: 40px;
+  }
+
+  &__button {
+    font-weight: bold;
+
+    &:hover {
+      @include hover-button;
+    }
+
+    &:active {
+      @include active-button;
+    }
   }
 }

@@ -5,29 +5,29 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 463px;
-  padding-top: 16px;
-  align-items: center;
-  justify-content: space-between;
+  &__front {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 463px;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: space-between;
 
-  @media screen and (max-width: 1200px) {
-    & {
-      flex-direction: column;
-      padding-bottom: 234px;
+    @media screen and (max-width: 1200px) {
+      & {
+        flex-direction: column;
+        padding-bottom: 234px;
+      }
     }
   }
-}
 
-.header__navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 49px;
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 49px;
+  }
 }
 
 .header__list {
@@ -40,6 +40,27 @@
     @include white-text;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      @include hover-text;
+    }
+
+    &:active {
+      @include active-text;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+
+    &:hover {
+      @include hover-button;
+    }
+
+    &:active {
+      @include active-button;
+    }
   }
 }
 
@@ -97,6 +118,19 @@
     height: 52px;
     width: 100%;
     justify-content: space-between;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.3s ease-in;
+      background-color: var(--color-blue-purple);
+    }
+
+    &:active {
+      transition: all 0.3s ease-in-out;
+      background-color: var(--color-light-blue-purple);
+      color: var(--color-blue-purple);
+      border-color: var(--color-blue-purple);
+    }
   }
 
   &__text {
@@ -107,6 +141,10 @@
   &__svg {
     width: 20px;
     height: 20px;
+
+    &:active {
+      color: var(--color-blue-purple);
+    }
   }
 
   &__description {
@@ -126,5 +164,15 @@
     color: var(--color-dark-green);
     background-color: var(--color-white-darker);
     border-color: var(--color-white-darker);
+    cursor: pointer;
+
+    &:hover {
+      @include hover-button;
+      color: var(--color-white);
+    }
+
+    &:active {
+      @include active-button;
+    }
   }
 }

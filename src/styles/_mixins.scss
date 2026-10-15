@@ -1,4 +1,4 @@
-@mixin center-element{
+@mixin center-element {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,4 +9,49 @@
   font-weight: 600;
   font-family: "Nunito sans", sans-serif;
   color: var(--color-white-darker);
+}
+
+@mixin yellow-text {
+  font:
+    normal 400 24px/20px Nunito sans,
+    sans-serif;
+  color: var(--color-yellow);
+}
+
+@mixin description {
+  font:
+    normal 400 18px/150% Nunito Sans,
+    sans-serif;
+  color: var(--color-black-purple);
+}
+
+@mixin hover-text {
+  transition: all 0.3s ease-in-out;
+  color: var(--color-yellow);
+  text-decoration: underline;
+}
+
+@mixin focus-text {
+  transition: all 0.2s ease-in-out;
+  color: var(--color-black-purple);
+  background-color: var(--color-light-green);
+}
+
+@mixin active-text {
+  transition: all 0.2s ease;
+  color: var(--color-light-yellow);
+  text-decoration: underline;
+}
+
+@mixin hover-button {
+  transition: all 0.3s ease-in;
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+@mixin active-button {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-light-green);
+  border-color: var(--color-light-green);
+  color: var(--color-dark-green);
 }
