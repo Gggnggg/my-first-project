@@ -1,0 +1,45 @@
+@use "../mixins" as *;
+
+.destination {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__about {
+    @include yellow-text;
+  }
+
+  &__pictures {
+    @include center-element;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__image {
+    height: 500px;
+    max-width: 380px;
+    cursor: pointer;
+  }
+
+  &__button {
+    &:hover {
+      @include hover-button;
+    }
+
+    &:active {
+      @include active-button;
+    }
+  }
+}
