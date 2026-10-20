@@ -1,0 +1,201 @@
+@use "../mixins" as *;
+
+.footer {
+  background-color: var(--color-dark-green);
+  padding-top: 100px;
+
+  &__mailing {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    padding: 40px 100px 40px 100px;
+    background-color: var(--color-white-darker);
+    box-shadow: 0px -1px 15px 0px var(--color-black-purple);
+    border-radius: 5px;
+    margin-top: -200px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__about {
+      @include yellow-text;
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__email {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__label {
+      @include white-text;
+      color: var(--color-black-purple);
+      line-height: 20px;
+    }
+
+    &__address {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 16px;
+    }
+
+    &__input {
+      flex: 1;
+      border: none;
+      background-color: var(--color-light-gray);
+      color: var(--color-black-purple);
+      padding-left: 16px;
+      border-radius: 4px;
+    }
+
+    &__footnote {
+      font:
+        normal 600 14px/18px "Nunito sans",
+        sans-serif;
+    }
+
+    &__data,
+    &__ad {
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 0 80px 0;
+
+    &__company {
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    &__title {
+      @include footer-header;
+    }
+
+    &__about {
+      @include white-footer;
+    }
+
+    &__anchors {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+    }
+
+    &__link {
+      font:
+        normal 600 14px/18px "Nunito sans",
+        sans-serif;
+      color: var(--color-white);
+      text-decoration: underline;
+    }
+
+    &__media {
+      display: flex;
+      flex-direction: row;
+      gap: 19px;
+    }
+  }
+
+  &__services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+      @include footer-header;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      color: var(--color-white);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__important {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+      @include footer-header;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      @include white-footer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__bottom {
+    background-color: var(--color-black-purple);
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 24px 0 24px 0;
+    }
+
+    &__name {
+      font:
+        normal 600 14px/18px "Nunito sans",
+        sans-serif;
+      color: var(--color-white);
+    }
+
+    &__link {
+      font:
+        normal 600 14px/18px "Nunito sans",
+        sans-serif;
+      color: var(--color-white);
+      text-decoration: underline;
+    }
+  }
+}
