@@ -289,16 +289,16 @@
             <h2 class="subtitle blog__title">Блог о путешествиях</h2>
           </div>
           <div class="blog__grid">
-            <div class="blog__article">
+            <a class="blog__article" href="#">
               <img
                 class="blog__article__image"
                 src="./public/assets/images/italy.png"
                 alt="Италия"
               />
               <div class="blog__article__info">
-                <a class="blog__article__name">
+                <div class="blog__article__name">
                   Красивая Италия, какая она в реальности?
-                </a>
+                </div>
                 <div class="blog__article__text">
                   Для современного мира базовый вектор развития предполагает
                   независимые способы реализации соответствующих условий
@@ -308,20 +308,20 @@
                   <time class="blog__article__date" datetime="2023-04-01">
                     01/04/2023
                   </time>
-                  <a class="blog__article__link"> читать статью </a>
+                  <div class="blog__article__link">читать статью</div>
                 </div>
               </div>
-            </div>
-            <div class="blog__article">
+            </a>
+            <a class="blog__article" href="#">
               <img
-                class="blog__artical__image"
+                class="blog__article__image"
                 src="public/assets/images/plane.png"
                 alt="самолёт"
               />
               <div class="blog__article__info">
-                <a class="blog__article__name">
+                <div class="blog__article__name">
                   Долой сомнения! Весь мир открыт для вас!
-                </a>
+                </div>
                 <div class="blog__article__text">
                   Для современного мира базовый вектор развития предполагает
                   независимые способы реализации соответствующих условий
@@ -332,20 +332,20 @@
                   <time class="blog__article__date" datetime="2023-04-01">
                     01/04/2023
                   </time>
-                  <a class="blog__article__link"> читать статью </a>
+                  <div class="blog__article__link">читать статью</div>
                 </div>
               </div>
-            </div>
-            <div class="blog__article">
+            </a>
+            <a class="blog__article" href="#">
               <img
-                class="blog__artical__image"
+                class="blog__article__image"
                 src="public/assets/images/traveler.png"
                 alt="путешественник"
               />
               <div class="blog__article__info">
-                <a class="blog__article__name">
+                <div class="blog__article__name">
                   Как подготовиться к путешествию в одиночку?
-                </a>
+                </div>
                 <div class="blog__article__text">
                   Для своевременного мира базовый вектор развития предполагает.
                 </div>
@@ -353,18 +353,18 @@
                   <time class="blog__article__date" datetime="2023-04-01">
                     01/04/2023
                   </time>
-                  <a class="blog__article__link">читать статью</a>
+                  <div class="blog__article__link">читать статью</div>
                 </div>
               </div>
-            </div>
-            <div class="blog__article">
+            </a>
+            <a class="blog__article">
               <img
-                class="blog__artical__image"
+                class="blog__article__image"
                 src="public/assets/images/india.png"
                 alt="Индия"
               />
               <div class="blog__article__info">
-                <a class="blog__article__name">Индия ... летим?</a>
+                <div class="blog__article__name">Индия ... летим?</div>
                 <div class="blog__article__text">
                   Для современного мира базовый
                 </div>
@@ -372,10 +372,10 @@
                   <time class="blog__article__date" datetime="20230-04-01">
                     01/04/2023
                   </time>
-                  <a class="blog__article__link">читать статью</a>
+                  <div class="blog__article__link">читать статью</div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <button class="button blog__button">Другие материалы</button>
         </div>
@@ -434,9 +434,9 @@
         </div>
       </section>
     </main>
-    <section class="footer">
-      <div class="container">
-        <div class="footer__mailing">
+    <footer class="footer">
+      <section class="footer__mailing">
+        <div class="container">
           <div class="footer__mailing__info">
             <span class="footer__mailing__about"> актуально </span>
             <h2 class="subtitle footer__mailing__title">
@@ -472,7 +472,9 @@
             </div>
           </div>
         </div>
-        <div class="footer__social">
+      </section>
+      <section class="footer__social">
+        <div class="container">
           <div class="footer__social__company">
             <div class="footer__social__info">
               <span class="footer__social__title">Компания «РумТибет»</span>
@@ -754,17 +756,19 @@
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer__bottom">
-      <div class="container">
-        <span class="footer__bottom__name">
-          ИП Константинопольский К.К., 2023
-        </span>
-        <a class="footer__bottom__link" href="#">
-          Политика обработка персональных данных
-        </a>
-      </div>
+      </section>
+      <section class="footer__bottom">
+        <div class="container">
+          <div class="container">
+            <span class="footer__bottom__name">
+              ИП Константинопольский К.К., 2023
+            </span>
+            <a class="footer__bottom__link" href="#">
+              Политика обработка персональных данных
+            </a>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
