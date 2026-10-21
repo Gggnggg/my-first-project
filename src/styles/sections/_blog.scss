@@ -31,52 +31,90 @@
     flex-direction: row;
     padding: 16px;
     gap: 24px;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    &__image {
+      height: 280px;
+      max-width: 230px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 16px 0 16px 0;
+    }
+
+    &__name {
+      font:
+        normal 700 24px/32px "Nunito sans",
+        sans-serif;
+      color: var(--color-black-purple);
+      cursor: pointer;
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        color: var(--color-dark-green);
+        text-decoration: underline;
+      }
+
+      &:active {
+        transition: all 0.2s ease-in-out;
+        color: var(--color-green-forest);
+        text-decoration: underline;
+      }
+    }
+
+    &__text {
+      font:
+        normal 400 14px/20px "Nunito sans",
+        sans-serif;
+      color: var(--color-black-purple);
+    }
+
+    &__date {
+      font:
+        normal 700 14px/20px "Nunito sans",
+        sans-serif;
+      color: var(--color-yellow);
+    }
+
+    &__link {
+      font:
+        normal 700 14px/20px "Nunito sans",
+        sans-serif;
+      color: var(--color-dark-green);
+      cursor: pointer;
+
+      &:hover {
+        @include hover-text;
+      }
+
+      &:active {
+        @include active-button;
+        background: none;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
-  &__article__image {
-    height: 280px;
-    max-width: 230px;
-  }
+  &__button {
+    &:hover {
+      @include hover-button;
+    }
 
-  &__article__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 16px 0 16px 0;
-  }
-
-  &__article__name {
-    font:
-      normal 700 24px/32px "Nunito sans",
-      sans-serif;
-    color: var(--color-black-purple);
-  }
-
-  &__article__text {
-    font:
-      normal 400 14px/20px "Nunito sans",
-      sans-serif;
-    color: var(--color-black-purple);
-  }
-
-  &__article__date {
-    font:
-      normal 700 14px/20px "Nunito sans",
-      sans-serif;
-    color: var(--color-yellow);
-  }
-
-  &__article__link {
-    font:
-      normal 700 14px/20px "Nunito sans",
-      sans-serif;
-    color: var(--color-dark-green);
-  }
-
-  &__article__footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    &:active {
+      @include active-button;
+    }
   }
 }

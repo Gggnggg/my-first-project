@@ -27,6 +27,18 @@
     gap: 20px;
   }
 
+  &__link {
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    &:active {
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+  }
+
   &__image {
     height: 500px;
     max-width: 380px;

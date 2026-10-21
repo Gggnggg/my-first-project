@@ -123,6 +123,7 @@
     &:hover {
       transition: all 0.3s ease-in;
       background-color: var(--color-blue-purple);
+      border-color: var(--color-blue-purple);
     }
 
     &:active {
