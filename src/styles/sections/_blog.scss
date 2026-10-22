@@ -37,6 +37,11 @@
       transform: scale(1.05);
     }
 
+    &:focus-visible {
+      transform: scale(1.05);
+      opacity: 0.5;
+    }
+
     &:active {
       opacity: 0.5;
     }
@@ -115,6 +120,11 @@
   &__button {
     &:hover {
       @include hover-button;
+    }
+
+    &:focus-visible {
+      @include focus-button;
+      color: var(--color-dark-green);
     }
 
     &:active {

@@ -63,6 +63,11 @@
   border-color: var(--color-green);
 }
 
+@mixin focus-button {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white-transparent);
+}
+
 @mixin active-button {
   transition: all 0.3s ease-in-out;
   background-color: var(--color-light-green);

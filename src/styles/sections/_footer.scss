@@ -76,6 +76,10 @@
         text-decoration: underline;
       }
 
+      &:focus-visible {
+        @include focus-text;
+      }
+
       &:active {
         transition: all 0.2s ease-in-out;
         color: var(--color-light-green);
@@ -86,6 +90,11 @@
     &__button {
       &:hover {
         @include hover-button;
+      }
+
+      &:focus-visible {
+        @include focus-button;
+        color: var(--color-dark-green);
       }
 
       &:active {
@@ -106,6 +115,13 @@
       justify-content: space-between;
     }
 
+    &__exit {
+      &:focus-visible {
+        transition: all 0.2s ease;
+        background-color: var(--color-white-transparent);
+      }
+    }
+
     &__icon {
       color: var(--color-white);
       cursor: pointer;
@@ -113,6 +129,11 @@
       &:hover {
         transition: all 0.2s ease-in-out;
         color: var(--color-yellow);
+      }
+
+      &:focus-visible {
+        transition: all 0.2s ease;
+        background-color: var(--color-white-transparent);
       }
 
       &:active {
@@ -165,6 +186,10 @@
         @include hover-text;
       }
 
+      &:focus-visible {
+        @include focus-text;
+      }
+
       &:active {
         @include active-button;
         background: none;
@@ -210,6 +235,12 @@
         background: none;
       }
     }
+
+    &__link {
+      &:focus-visible {
+        @include focus-text;
+      }
+    }
   }
 
   &__important {
@@ -244,6 +275,12 @@
         background: none;
       }
     }
+
+    &__link {
+      &:focus-visible {
+        @include focus-text;
+      }
+    }
   }
 
   &__bottom {
@@ -272,6 +309,10 @@
 
       &:hover {
         @include hover-text;
+      }
+
+      &:focus-visible {
+        @include focus-text;
       }
 
       &:active {

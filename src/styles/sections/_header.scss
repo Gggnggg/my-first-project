@@ -41,9 +41,15 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+  }
 
+  &__link {
     &:hover {
       @include hover-text;
+    }
+
+    &:focus-visible {
+      @include focus-text;
     }
 
     &:active {
@@ -56,6 +62,10 @@
 
     &:hover {
       @include hover-button;
+    }
+
+    &:focus-visible {
+      @include focus-text;
     }
 
     &:active {
@@ -176,6 +186,11 @@
 
     &:hover {
       @include hover-button;
+      color: var(--color-white);
+    }
+
+    &:focus-visible {
+      background-color: var(--color-dark-green);
       color: var(--color-white);
     }
 

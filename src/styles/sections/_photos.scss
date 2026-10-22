@@ -35,6 +35,12 @@
       transition: all 0.3s ease;
     }
 
+    &:focus-visible {
+      transition: all 0.2s ease;
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+
     &:active {
       opacity: 0.8;
       transition: opacity 0.2s ease;
@@ -60,6 +66,12 @@
     &:hover {
       @include hover-button;
     }
+
+    &:focus-visible {
+      @include focus-button;
+      color: var(--color-dark-green);
+    }
+
     &:active {
       @include active-button;
     }

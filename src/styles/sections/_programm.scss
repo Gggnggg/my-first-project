@@ -44,6 +44,11 @@
       @include hover-button;
     }
 
+    &:focus-visible {
+      @include focus-button;
+      color: var(--color-dark-green);
+    }
+
     &:active {
       @include active-button;
     }
