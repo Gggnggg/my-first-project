@@ -5,36 +5,98 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 120px;
     padding: 100px 0 100px 0;
-  }
+    justify-content: space-between;
 
-  &__inner {
-    width: 100%;
+    @media screen and (max-width: 1200px) {
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      gap: 40px;
+      padding: 50px 0;
+    }
   }
 
   &__image {
     max-width: 480px;
     height: 526px;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 336px;
+      max-height: 360px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    &-second {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        max-width: 358px;
+      }
+
+      @media screen and (max-width: 576px) {
+        max-width: 358px;
+      }
+    }
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
     max-width: 580px;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   &__about {
     @include yellow-text;
-    padding-bottom: 8px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &__title {
-    padding-bottom: 40px;
+    @media screen and (max-width: 1200px) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__text {
     @include description;
-    padding-bottom: 40px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__button {
@@ -51,6 +113,10 @@
 
     &:active {
       @include active-button;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 12px 14px;
     }
   }
 }
