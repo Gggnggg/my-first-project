@@ -15,16 +15,54 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+
+    @media screen and (max-width: 576px) {
+      align-items: flex-start;
+    }
   }
 
   &__about {
     @include yellow-text;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__pictures {
     @include center-element;
     flex-direction: row;
     gap: 20px;
+    width: 100%;
+
+    @media screen and (max-width: 1200px) {
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      &::-webkit-scrollbar {
+        height: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: var(--color-light-yellow);
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-yellow);
+        border-radius: 3px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      justify-content: flex-start;
+    }
   }
 
   &__link {
@@ -46,9 +84,17 @@
   }
 
   &__image {
-    height: 500px;
+    height: auto;
     max-width: 380px;
     cursor: pointer;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 300px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 285px;
+    }
   }
 
   &__button {
@@ -63,6 +109,10 @@
 
     &:active {
       @include active-button;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 12px 24px;
     }
   }
 }
