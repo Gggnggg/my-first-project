@@ -12,6 +12,11 @@
     @media screen and (max-width: 768px) {
       overflow: hidden;
     }
+
+    @media screen and (max-width: 576px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__info {

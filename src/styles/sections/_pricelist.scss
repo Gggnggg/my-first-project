@@ -17,6 +17,11 @@
     @media screen and (max-width: 768px) {
       flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 576px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__content-text {

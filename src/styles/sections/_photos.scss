@@ -8,16 +8,40 @@
     gap: 40px;
     padding-top: 80px;
     padding-bottom: 200px;
+
+    @media screen and (max-width: 768px) {
+      align-items: unset;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding-top: 50px;
+      padding-bottom: 170px;
+    }
   }
 
   &__info {
     @include center-element;
     flex-direction: column;
     gap: 8px;
+
+    @media screen and (max-width: 576px) {
+      align-items: flex-start;
+    }
   }
 
   &__about {
     @include yellow-text;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__grid {
@@ -25,6 +49,31 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: unset;
+
+      &::-webkit-scrollbar {
+        height: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: var(--color-light-yellow);
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-yellow);
+        border-radius: 3px;
+      }
+    }
   }
 
   &__link {
@@ -48,10 +97,18 @@
 
     &:nth-child(1) {
       grid-column: 1 / 3;
+
+      @media screen and (max-width: 1200px) {
+        grid-column: 1 / 2;
+      }
     }
 
     &:nth-child(5) {
       grid-column: 2 / 4;
+
+      @media screen and (max-width: 1200px) {
+        grid-column: 2 / 3;
+      }
     }
   }
 
@@ -60,9 +117,16 @@
     height: 100%;
     max-height: 250px;
     max-width: 580px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    @media screen and (max-width: 768px) {
+      width: 285px;
+    }
   }
 
   &__button {
+    max-width: 178px;
     &:hover {
       @include hover-button;
     }
@@ -74,6 +138,11 @@
 
     &:active {
       @include active-button;
+    }
+
+    &__wrapper {
+      @include center-element;
+      width: 100%;
     }
   }
 }
