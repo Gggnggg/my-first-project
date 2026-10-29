@@ -49,6 +49,7 @@
     @media screen and (max-width: 1200px) {
       overflow-x: auto;
       overflow-y: hidden;
+      padding-bottom: 5px;
 
       &::-webkit-scrollbar {
         height: 3px;

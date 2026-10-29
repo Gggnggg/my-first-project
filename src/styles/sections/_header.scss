@@ -54,6 +54,10 @@
   align-items: center;
   gap: 24px;
 
+  @media screen and (max-width: 1200px) {
+    gap: 10px;
+  }
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -63,6 +67,10 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__link {
@@ -132,6 +140,7 @@
   line-height: 150%;
   letter-spacing: 2px;
   padding-bottom: 41px;
+  overflow-wrap: break-word;
 
   @media screen and (max-width: 1200px) {
     font-size: 45px;
@@ -164,6 +173,10 @@
     width: 100%;
     justify-content: space-evenly;
 
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
     @media screen and (max-width: 576px) {
       background-color: transparent;
       justify-content: flex-start;
@@ -175,7 +188,7 @@
     width: 100%;
     max-width: 270px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       width: auto;
     }
 
@@ -203,7 +216,9 @@
 
     @media screen and (max-width: 768px) {
       justify-content: center;
-      padding: 0 45px;
+      padding: 0 15px 0 15px;
+      width: auto;
+      font-size: 12px;
     }
 
     &:hover {
@@ -231,14 +246,18 @@
     padding-right: 8px;
     display: flex;
 
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+    //@media screen and (max-width: 768px) {
+    //  display: none;
+    //}
   }
 
   &__svg {
     width: 20px;
     height: 20px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 
     &:active {
       color: var(--color-blue-purple);
@@ -269,12 +288,16 @@
     cursor: pointer;
 
     @media screen and (max-width: 768px) {
-      padding: 0;
       margin: 0;
+      justify-content: center;
+      padding: 0 15px 0 15px;
+      width: auto;
+      font-size: 12px;
     }
 
     @media screen and (max-width: 576px) {
       padding: 15px 35px;
+      font-size: 16px;
     }
 
     &:hover {
