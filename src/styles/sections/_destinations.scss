@@ -8,10 +8,26 @@
     gap: 50px;
     padding-top: 80px;
     padding-bottom: 100px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1200px) {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
 
     @media screen and (max-width: 576px) {
       padding-top: 50px;
       padding-bottom: 50px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    @include center-element;
+
+    @media screen and (max-width: 768px) {
+      justify-content: flex-start;
     }
   }
 
@@ -21,7 +37,7 @@
     align-items: center;
     gap: 8px;
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       align-items: flex-start;
     }
   }
@@ -40,67 +56,183 @@
     }
   }
 
-  &__pictures {
-    @include center-element;
-    flex-direction: row;
+  &__anchors {
+    display: flex;
     gap: 20px;
     width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5px;
 
-    @media screen and (max-width: 1200px) {
-      overflow-x: auto;
-      overflow-y: hidden;
-      padding-bottom: 5px;
-
-      &::-webkit-scrollbar {
-        height: 3px;
-      }
-
-      &::-webkit-scrollbar-track {
-        background-color: var(--color-light-yellow);
-        border-radius: 3px;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background: var(--color-yellow);
-        border-radius: 3px;
-      }
+    &::-webkit-scrollbar {
+      height: 3px;
     }
 
-    @media screen and (max-width: 768px) {
-      justify-content: flex-start;
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-light-yellow);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-yellow);
+      border-radius: 3px;
     }
   }
 
-  &__link {
-    &:hover {
-      transform: scale(1.05);
-      transition: all 0.3s ease;
+  &__picture {
+    background-image: url("../../../public/assets/images/destination_boats.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 500px;
+    width: 380px;
+    object-fit: cover;
+    background-position: 45% 50%;
+    border-radius: 30px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 45px;
+      width: 285px;
+      height: 400px;
     }
 
-    &:focus-visible {
-      opacity: 0.6;
-      transform: scale(1.05);
-      transition: all 0.3s ease;
+    &:nth-child(2) {
+      background-image: url("../../../public/assets/images/destination_mountain.jpg");
+      background-position: 60% center;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../../../public/assets/images/destination_yoga.jpg");
+      background-position: 50% center;
     }
 
     &:active {
       opacity: 0.8;
-      transition: opacity 0.2s ease;
+      transform: scale(0.95);
+      transition: all 0.3s ease-in-out;
     }
   }
 
-  &__image {
-    height: auto;
-    max-width: 380px;
-    cursor: pointer;
+  &__naming {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    gap: 40px;
+    transform: translateY(67%);
+    height: 100%;
 
-    @media screen and (max-width: 1200px) {
-      max-width: 300px;
+    &:hover {
+      transform: translateY(-15%);
+      transition: all 0.5s ease-in-out;
     }
 
-    @media screen and (max-width: 768px) {
-      max-width: 285px;
+    &__top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
     }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font:
+        700 24px/120% "Nunito Sans",
+        sans-serif;
+      color: var(--color-white-darker);
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    &__description {
+      font:
+        400 14px/18px "Nunito Sans",
+        sans-serif;
+      color: var(--color-white-darker);
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__price {
+      font:
+        700 20px/24px "Nunito Sans",
+        sans-serif;
+      color: var(--color-white-darker);
+      background-color: #ffffff30;
+      padding: 8px 16px;
+      border-radius: 4px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        padding: 6px 12px;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 105px;
+
+      @media screen and (max-width: 768px) {
+        gap: 50px;
+      }
+    }
+
+    &__info {
+      font:
+        400 16px/150% "Nunito Sans",
+        sans-serif;
+      color: var(--color-white-darker);
+
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+
+    &__button {
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #ffffff66;
+    border-radius: 6px 0 0 6px;
+    gap: 4px;
+    margin-top: 50px;
+    backdrop-filter: blur(4px);
+
+    &__mark {
+      font:
+        700 14px/18px "Nunito Sans",
+        sans-serif;
+      color: var(--color-dark-green);
+    }
+  }
+
+  &__wrapper {
+    @include center-element;
+    width: 100%;
   }
 
   &__button {

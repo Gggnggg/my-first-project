@@ -140,7 +140,6 @@
   line-height: 150%;
   letter-spacing: 2px;
   padding-bottom: 41px;
-  overflow-wrap: break-word;
 
   @media screen and (max-width: 1200px) {
     font-size: 45px;
@@ -151,7 +150,7 @@
   }
 
   @media screen and (max-width: 576px) {
-    font-size: 28px;
+    font-size: 22px;
     padding-bottom: 32px;
   }
 }
@@ -174,13 +173,17 @@
     justify-content: space-evenly;
 
     @media screen and (max-width: 1200px) {
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      justify-content: center;
     }
 
     @media screen and (max-width: 576px) {
       background-color: transparent;
       justify-content: flex-start;
       height: auto;
+      flex-direction: row;
     }
   }
 
@@ -189,7 +192,8 @@
     max-width: 270px;
 
     @media screen and (max-width: 1200px) {
-      width: auto;
+      max-width: unset;
+      padding: 10px 20px;
     }
 
     @media screen and (max-width: 576px) {
@@ -214,10 +218,15 @@
     justify-content: space-between;
     cursor: pointer;
 
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+      gap: 20px;
+    }
+
     @media screen and (max-width: 768px) {
       justify-content: center;
       padding: 0 15px 0 15px;
-      width: auto;
+      width: 100%;
       font-size: 12px;
     }
 
@@ -243,19 +252,14 @@
   }
 
   &__text {
-    padding-right: 8px;
     display: flex;
-
-    //@media screen and (max-width: 768px) {
-    //  display: none;
-    //}
   }
 
   &__svg {
     width: 20px;
     height: 20px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 576px) {
       display: none;
     }
 
@@ -271,7 +275,7 @@
     line-height: 150%;
     padding: 8px 8px 0 8px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 576px) {
       display: none;
     }
   }
@@ -287,12 +291,8 @@
     border-color: var(--color-white-darker);
     cursor: pointer;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       margin: 0;
-      justify-content: center;
-      padding: 0 15px 0 15px;
-      width: auto;
-      font-size: 12px;
     }
 
     @media screen and (max-width: 576px) {
