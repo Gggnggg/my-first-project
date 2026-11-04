@@ -8,7 +8,6 @@
     gap: 50px;
     padding-top: 80px;
     padding-bottom: 100px;
-    overflow: hidden;
 
     @media screen and (max-width: 1200px) {
       align-items: flex-start;
@@ -61,6 +60,7 @@
     gap: 20px;
     width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     padding-bottom: 5px;
 
     &::-webkit-scrollbar {
@@ -84,17 +84,25 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    width: 100%;
     height: 500px;
-    width: 380px;
+    max-width: 380px;
     object-fit: cover;
     background-position: 45% 50%;
     border-radius: 30px;
-    flex-shrink: 0;
     overflow: hidden;
+
+    &:hover .destination__naming {
+      transform: translateY(-15%);
+    }
+
+    @media screen and (max-width: 1200px) {
+      flex-shrink: 0;
+    }
 
     @media screen and (max-width: 768px) {
       border-radius: 45px;
-      width: 285px;
+      max-width: 285px;
       height: 400px;
     }
 
@@ -123,15 +131,11 @@
     padding: 20px 32px;
     backdrop-filter: blur(3px);
     width: 100%;
-    border-radius: 0 0 30px 30px;
+    border-radius: 30px;
     gap: 40px;
     transform: translateY(67%);
     height: 100%;
-
-    &:hover {
-      transform: translateY(-15%);
-      transition: all 0.5s ease-in-out;
-    }
+    transition: transform 0.5s ease;
 
     &__top {
       display: flex;

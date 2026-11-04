@@ -33,10 +33,12 @@
     @media screen and (max-width: 1200px) {
       flex-direction: column;
       padding-bottom: 234px;
+      gap: 20px;
     }
 
     @media screen and (max-width: 768px) {
       flex-direction: row;
+      gap: 0;
     }
   }
 
@@ -45,6 +47,16 @@
     flex-direction: row;
     align-items: center;
     gap: 49px;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: flex-end;
+      gap: 50px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: unset;
+    }
   }
 }
 
@@ -55,10 +67,6 @@
   gap: 24px;
 
   @media screen and (max-width: 1200px) {
-    gap: 10px;
-  }
-
-  @media screen and (max-width: 768px) {
     display: none;
   }
 
@@ -90,6 +98,10 @@
   &__button {
     cursor: pointer;
 
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -111,7 +123,7 @@
     display: none;
     color: var(--color-white);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       display: flex;
     }
 
@@ -219,7 +231,7 @@
     cursor: pointer;
 
     @media screen and (max-width: 1200px) {
-      justify-content: center;
+      justify-content: space-between;
       gap: 20px;
     }
 
@@ -280,6 +292,12 @@
     }
   }
 
+  &__button__wrapper {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
   &__button-find {
     font-weight: 700;
     padding: 15px 35px;
@@ -292,12 +310,13 @@
     cursor: pointer;
 
     @media screen and (max-width: 1200px) {
-      margin: 0;
+      width: 100%;
     }
 
     @media screen and (max-width: 576px) {
       padding: 15px 35px;
       font-size: 16px;
+      width: unset;
     }
 
     &:hover {
