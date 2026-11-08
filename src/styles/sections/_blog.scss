@@ -5,24 +5,24 @@
   .container {
     @include center-element;
     flex-direction: column;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    gap: 40px;
+    padding-top: 5rem;
+    padding-bottom: 6.25rem;
+    gap: 2.5rem;
 
     @media screen and (max-width: 768px) {
       overflow: hidden;
     }
 
     @media screen and (max-width: 576px) {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
     }
   }
 
   &__info {
     @include center-element;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 
     @media screen and (max-width: 768px) {
       align-items: flex-start;
@@ -33,13 +33,13 @@
     @include yellow-text;
 
     @media screen and (max-width: 768px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
   &__title {
     @media screen and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
@@ -47,8 +47,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    column-gap: 20px;
-    row-gap: 24px;
+    column-gap: 1.25rem;
+    row-gap: 1.5rem;
 
     @media screen and (max-width: 768px) {
       display: flex;
@@ -56,31 +56,31 @@
       overflow-x: auto;
       overflow-y: hidden;
       width: 100%;
-      padding-bottom: 5px;
+      padding-bottom: 0.3125rem;
     }
 
     &::-webkit-scrollbar {
-      height: 3px;
+      height: 0.1875rem;
     }
 
     &::-webkit-scrollbar-track {
       background-color: var(--color-light-yellow);
-      border-radius: 3px;
+      border-radius: 0.1875rem;
     }
 
     &::-webkit-scrollbar-thumb {
       background: var(--color-yellow);
-      border-radius: 3px;
+      border-radius: 0.1875rem;
     }
   }
 
   &__article {
     background-color: var(--color-white-darker);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     display: flex;
     flex-direction: row;
-    padding: 16px;
-    gap: 24px;
+    padding: 1rem;
+    gap: 1.5rem;
     transition: all 0.3s ease;
     justify-content: space-between;
 
@@ -90,9 +90,10 @@
     }
 
     @media screen and (max-width: 768px) {
-      gap: 16px;
+      gap: 1rem;
       flex-shrink: 0;
-      max-width: 285px;
+      max-width: 17.8125rem;
+      width: 100%;
       justify-content: unset;
     }
 
@@ -114,12 +115,14 @@
     }
 
     &__image {
-      height: 280px;
-      max-width: 230px;
+      height: 17.5rem;
+      max-width: 14.375rem;
+      width: 100%;
+      object-fit: cover;
 
       @media screen and (max-width: 576px) {
-        max-width: 285px;
-        width: 100%;
+        max-width: 100%;
+        height: 12.5rem;
       }
     }
 
@@ -129,27 +132,27 @@
       justify-content: center;
       width: 100%;
       height: 100%;
-      padding: 16px 0 16px 0;
-      gap: 24px;
+      padding: 1rem 0;
+      gap: 1.5rem;
 
       @media screen and (max-width: 1200px) {
-        gap: 16px;
+        gap: 1rem;
       }
 
       @media screen and (max-width: 576px) {
-        padding: 16px;
+        padding: 1rem;
       }
     }
 
     &__name {
       font:
-        normal 700 24px/32px "Nunito sans",
+        normal 700 1.5rem/2rem "Nunito sans",
         sans-serif;
       color: var(--color-black-purple);
       cursor: pointer;
 
       @media screen and (max-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5rem;
       }
 
       &:hover {
@@ -168,28 +171,28 @@
     &__description {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 1.5rem;
       justify-content: space-between;
       height: 100%;
     }
 
     &__text {
       font:
-        normal 400 14px/20px "Nunito sans",
+        normal 400 0.875rem/1.25rem "Nunito sans",
         sans-serif;
       color: var(--color-black-purple);
     }
 
     &__date {
       font:
-        normal 700 14px/20px "Nunito sans",
+        normal 700 0.875rem/1.25rem "Nunito sans",
         sans-serif;
       color: var(--color-yellow);
     }
 
     &__link {
       font:
-        normal 700 14px/20px "Nunito sans",
+        normal 700 0.875rem/1.25rem "Nunito sans",
         sans-serif;
       color: var(--color-dark-green);
       cursor: pointer;

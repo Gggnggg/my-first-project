@@ -11,13 +11,13 @@
       @include center-element;
 
       @media screen and (max-width: 768px) {
-        width: 100px;
-        height: 50px;
+        width: 6.25rem;
+        height: 3.125rem;
       }
 
       @media screen and (max-width: 576px) {
-        width: 84px;
-        height: 44px;
+        width: 5.25rem;
+        height: 2.75rem;
       }
     }
   }
@@ -25,8 +25,8 @@
   &__front {
     display: flex;
     flex-direction: row;
-    padding-bottom: 463px;
-    padding-top: 16px;
+    padding-bottom: 28.9375rem;
+    padding-top: 1rem;
     align-items: center;
     justify-content: space-between;
   }
@@ -35,11 +35,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 49px;
+    gap: 3.0625rem;
 
     @media screen and (max-width: 1200px) {
       justify-content: flex-end;
-      gap: 50px;
+      gap: 3.125rem;
       width: 100%;
     }
 
@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 
   @media screen and (max-width: 1200px) {
     display: none;
@@ -61,12 +61,12 @@
 
   &__item {
     @include white-text;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     cursor: pointer;
 
     @media screen and (max-width: 1200px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
@@ -131,40 +131,40 @@
 
 .title {
   font-family: "Next Art", sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
   color: var(--color-white-darker);
   line-height: 150%;
-  letter-spacing: 2px;
-  padding-bottom: 41px;
+  letter-spacing: 0.125rem;
+  padding-bottom: 2.5625rem;
 
   @media screen and (max-width: 1200px) {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   @media screen and (max-width: 576px) {
-    font-size: 22px;
-    padding-bottom: 32px;
+    font-size: 1.375rem;
+    padding-bottom: 2rem;
   }
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding-bottom: 50px;
+  gap: 1.5rem;
+  padding-bottom: 3.125rem;
 
   &__container {
     background-color: var(--color-white-transparent);
-    backdrop-filter: blur(2.5px);
-    border-radius: 10px;
+    backdrop-filter: blur(0.15625rem);
+    border-radius: 0.625rem;
     display: flex;
-    max-width: 1180px;
-    height: 161px;
+    max-width: 73.75rem;
+    height: 10.0625rem;
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
@@ -172,7 +172,7 @@
     @media screen and (max-width: 1200px) {
       flex-direction: column;
       align-items: center;
-      height: 400px;
+      height: 25rem;
       justify-content: center;
     }
 
@@ -186,11 +186,11 @@
 
   &__item {
     width: 100%;
-    max-width: 270px;
+    max-width: 16.875rem;
 
     @media screen and (max-width: 1200px) {
       max-width: unset;
-      padding: 10px 20px;
+      padding: 0.625rem 1.25rem;
     }
 
     @media screen and (max-width: 576px) {
@@ -200,30 +200,30 @@
 
   &__button {
     display: flex;
-    border: solid 1px var(--color-white-darker);
+    border: solid 0.0625rem var(--color-white-darker);
     background: transparent;
     color: var(--color-white-darker);
-    border-radius: 9px;
+    border-radius: 0.5625rem;
     font-family: "Nunito sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
     font-weight: 700;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     align-items: center;
-    height: 52px;
+    height: 3.25rem;
     width: 100%;
     justify-content: space-between;
     cursor: pointer;
 
     @media screen and (max-width: 1200px) {
       justify-content: space-between;
-      gap: 20px;
+      gap: 1.25rem;
     }
 
     @media screen and (max-width: 768px) {
-      padding: 0 15px 0 15px;
+      padding: 0 0.9375rem 0 0.9375rem;
       width: 100%;
-      font-size: 12px;
+      font-size: 0.75rem;
     }
 
     &:hover {
@@ -252,8 +252,8 @@
   }
 
   &__svg {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 
     @media screen and (max-width: 576px) {
       display: none;
@@ -266,10 +266,10 @@
 
   &__description {
     @include white-text;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 150%;
-    padding: 8px 8px 0 8px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
 
     @media screen and (max-width: 576px) {
       display: none;
@@ -280,17 +280,17 @@
     display: flex;
 
     @media screen and (max-width: 1200px) {
-      padding: 10px 20px;
+      padding: 0.625rem 1.25rem;
       width: 100%;
     }
   }
 
   &__button-find {
     font-weight: 700;
-    padding: 15px 35px;
-    margin-bottom: 29px;
-    height: 52px;
-    border-radius: 9px;
+    padding: 0.9375rem 2.1875rem;
+    margin-bottom: 1.8125rem;
+    height: 3.25rem;
+    border-radius: 0.5625rem;
     color: var(--color-dark-green);
     background-color: var(--color-white-darker);
     border-color: var(--color-white-darker);
@@ -302,8 +302,8 @@
     }
 
     @media screen and (max-width: 576px) {
-      padding: 15px 35px;
-      font-size: 16px;
+      padding: 0.9375rem 2.1875rem;
+      font-size: 1rem;
       width: unset;
     }
 

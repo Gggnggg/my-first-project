@@ -2,63 +2,63 @@
 
 .footer {
   background-color: var(--color-dark-green);
-  padding-top: 100px;
+  padding-top: 6.25rem;
 
   &__mailing {
     .container {
       display: flex;
       flex-direction: row;
-      gap: 64px;
-      padding: 40px 100px 40px 100px;
+      gap: 4rem;
+      padding: 2.5rem 6.25rem 2.5rem 6.25rem;
       background-color: var(--color-white-darker);
-      box-shadow: 0px -1px 15px 0px var(--color-black-purple);
-      border-radius: 5px;
-      margin-top: -200px;
+      box-shadow: 0px -0.0625rem 0.9375rem 0px var(--color-black-purple);
+      border-radius: 0.3125rem;
+      margin-top: -12.5rem;
 
       @media screen and (max-width: 1200px) {
         flex-direction: column;
-        gap: 18px;
-        padding: 40px;
+        gap: 1.125rem;
+        padding: 2.5rem;
       }
 
       @media screen and (max-width: 768px) {
-        padding: 24px;
+        padding: 1.5rem;
       }
     }
 
     &__info {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 0.5rem;
     }
 
     &__about {
       @include yellow-text;
-      font-size: 18px;
+      font-size: 1.125rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
 
     &__title {
-      font-size: 26px;
+      font-size: 1.625rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5rem;
       }
     }
 
     &__email {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 0.5rem;
     }
 
     &__label {
       @include white-text;
       color: var(--color-black-purple);
-      line-height: 20px;
+      line-height: 1.25rem;
     }
 
     &__address {
@@ -66,7 +66,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: stretch;
-      gap: 16px;
+      gap: 1rem;
 
       @media screen and (max-width: 576px) {
         flex-direction: column;
@@ -79,18 +79,18 @@
       border: none;
       background-color: var(--color-light-gray);
       color: var(--color-black-purple);
-      padding-left: 16px;
-      border-radius: 4px;
+      padding-left: 1rem;
+      border-radius: 0.25rem;
 
       @media screen and (max-width: 576px) {
-        padding: 12px;
+        padding: 0.75rem;
         width: 100%;
       }
     }
 
     &__footnote {
       font:
-        normal 600 14px/18px "Nunito sans",
+        normal 600 0.875rem/1.125rem "Nunito sans",
         sans-serif;
     }
 
@@ -139,11 +139,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 80px 0 80px 0;
+    padding: 5rem 0 5rem 0;
     background-color: var(--color-dark-green);
 
     @media screen and (max-width: 768px) {
-      padding-top: 50px;
+      padding-top: 3.125rem;
     }
 
     .container {
@@ -151,11 +151,11 @@
       justify-content: space-between;
 
       @media screen and (max-width: 1200px) {
-        gap: 20px;
+        gap: 1.25rem;
       }
 
       @media screen and (max-width: 768px) {
-        gap: 50px;
+        gap: 3.125rem;
         flex-direction: column;
       }
     }
@@ -188,24 +188,24 @@
     }
 
     &__company {
-      max-width: 480px;
+      max-width: 30rem;
       display: flex;
       flex-direction: column;
-      gap: 80px;
+      gap: 5rem;
 
       @media screen and (max-width: 1200px) {
         flex-shrink: 2;
       }
 
       @media screen and (max-width: 768px) {
-        gap: 30px;
+        gap: 1.875rem;
       }
     }
 
     &__info {
       display: flex;
       flex-direction: column;
-      gap: 17px;
+      gap: 1.0625rem;
     }
 
     &__title {
@@ -219,18 +219,18 @@
     &__anchors {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 2rem;
     }
 
     &__contacts {
       display: flex;
       flex-direction: row;
-      gap: 24px;
+      gap: 1.5rem;
     }
 
     &__link {
       font:
-        normal 600 14px/18px "Nunito sans",
+        normal 600 0.875rem/1.125rem "Nunito sans",
         sans-serif;
       color: var(--color-white);
       text-decoration: underline;
@@ -252,14 +252,14 @@
     &__media {
       display: flex;
       flex-direction: row;
-      gap: 19px;
+      gap: 1.1875rem;
     }
   }
 
   &__services {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 
     &__title {
       @include footer-header;
@@ -268,7 +268,7 @@
     &__list {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 1rem;
     }
 
     &__item {
@@ -276,7 +276,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 8px;
+      gap: 0.5rem;
       @include white-footer;
 
       &:hover {
@@ -290,7 +290,7 @@
     }
 
     &__svg {
-      min-width: 10px;
+      min-width: 0.625rem;
     }
 
     &__link {
@@ -300,15 +300,15 @@
     }
 
     &__new {
-      min-width: 44px;
+      min-width: 2.75rem;
     }
   }
 
   &__important {
-    max-width: 280px;
+    max-width: 17.5rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 
     &__title {
       @include footer-header;
@@ -317,7 +317,7 @@
     &__list {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 1rem;
     }
 
     &__item {
@@ -325,7 +325,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 8px;
+      gap: 0.5rem;
 
       &:hover {
         @include hover-text;
@@ -351,26 +351,26 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 24px 15px;
+      padding: 1.5rem 0.9375rem;
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-        gap: 8px;
-        padding: 20px 15px;
+        gap: 0.5rem;
+        padding: 1.25rem 0.9375rem;
       }
     }
 
     &__name {
       font:
-        normal 600 14px/18px "Nunito sans",
+        normal 600 0.875rem/1.125rem "Nunito sans",
         sans-serif;
       color: var(--color-white);
     }
 
     &__link {
       font:
-        normal 600 14px/18px "Nunito sans",
+        normal 600 0.875rem/1.125rem "Nunito sans",
         sans-serif;
       color: var(--color-white);
       text-decoration: underline;

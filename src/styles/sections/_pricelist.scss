@@ -5,13 +5,13 @@
   .container {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    gap: 5.625rem;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 5rem;
+    padding-bottom: 6.25rem;
 
     @media screen and (max-width: 1200px) {
-      gap: 20px;
+      gap: 1.25rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -19,18 +19,18 @@
     }
 
     @media screen and (max-width: 576px) {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
     }
   }
 
   &__content-text {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 
     @media screen and (max-width: 1200px) {
-      gap: 32px;
+      gap: 2rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -41,20 +41,20 @@
   &__name {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   &__about {
     @include yellow-text;
 
     @media screen and (max-width: 768px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
   &__title {
     @media screen and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
@@ -62,53 +62,53 @@
     @include description;
 
     @media screen and (max-width: 768px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
   &__list {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     flex-direction: column;
 
     @media screen and (max-width: 1200px) {
-      gap: 32px;
+      gap: 2rem;
     }
   }
 
   &__item {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
   }
 
   &__svg {
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
   }
 
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.25rem;
   }
 
   &__header {
     font:
-      700 18px/20px "Nunito sans",
+      700 1.125rem/1.25rem "Nunito sans",
       sans-serif;
     letter-spacing: 1.2%;
   }
 
   &__description {
     font:
-      400 14px/20px "Nunito sans",
+      400 0.875rem/1.25rem "Nunito sans",
       sans-serif;
   }
 
   &__button {
-    max-width: 236px;
-    height: 52px;
+    max-width: 14.75rem;
+    height: 3.25rem;
 
     &:hover {
       @include hover-button;
@@ -124,7 +124,7 @@
     }
 
     @media screen and (max-width: 1200px) {
-      padding: 12px 24px;
+      padding: 0.75rem 1.5rem;
     }
   }
 
@@ -135,16 +135,16 @@
   }
 
   &__src {
-    max-width: 510px;
-    height: 510px;
+    max-width: 31.875rem;
+    height: 31.875rem;
 
     @media screen and (max-width: 1200px) {
-      max-width: 390px;
+      max-width: 24.375rem;
       height: auto;
     }
 
     @media screen and (max-width: 576px) {
-      max-width: 310px;
+      max-width: 19.375rem;
     }
   }
 }

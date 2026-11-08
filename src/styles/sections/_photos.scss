@@ -5,9 +5,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding-top: 80px;
-    padding-bottom: 200px;
+    gap: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 12.5rem;
 
     @media screen and (max-width: 768px) {
       align-items: unset;
@@ -15,15 +15,15 @@
     }
 
     @media screen and (max-width: 576px) {
-      padding-top: 50px;
-      padding-bottom: 170px;
+      padding-top: 3.125rem;
+      padding-bottom: 10.625rem;
     }
   }
 
   &__info {
     @include center-element;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 
     @media screen and (max-width: 576px) {
       align-items: flex-start;
@@ -34,13 +34,13 @@
     @include yellow-text;
 
     @media screen and (max-width: 768px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
   &__title {
     @media screen and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
@@ -48,7 +48,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
 
     @media screen and (max-width: 1200px) {
       grid-template-columns: repeat(3, 1fr);
@@ -59,20 +59,20 @@
       flex-wrap: nowrap;
       overflow-x: auto;
       overflow-y: unset;
-      padding-bottom: 5px;
+      padding-bottom: 0.3125rem;
 
       &::-webkit-scrollbar {
-        height: 3px;
+        height: 0.1875rem;
       }
 
       &::-webkit-scrollbar-track {
         background-color: var(--color-light-yellow);
-        border-radius: 3px;
+        border-radius: 0.1875rem;
       }
 
       &::-webkit-scrollbar-thumb {
         background: var(--color-yellow);
-        border-radius: 3px;
+        border-radius: 0.1875rem;
       }
     }
   }
@@ -116,18 +116,19 @@
   &__picture {
     width: 100%;
     height: 100%;
-    max-height: 250px;
-    max-width: 580px;
+    max-height: 15.625rem;
+    max-width: 36.25rem;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     @media screen and (max-width: 768px) {
-      width: 285px;
+      width: 17.8125rem;
     }
   }
 
   &__button {
-    max-width: 178px;
+    max-width: 11.125rem;
+
     &:hover {
       @include hover-button;
     }
